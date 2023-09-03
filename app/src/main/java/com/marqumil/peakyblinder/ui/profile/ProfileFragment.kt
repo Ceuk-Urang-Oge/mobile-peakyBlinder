@@ -39,11 +39,22 @@ class ProfileFragment : Fragment() {
         binding.apply {
             if (userViewModel.isUserSignedIn()) {
                 tvEmail.text = userViewModel.getEmail().toString()
-                tvProfileName.text = userViewModel.getUsername().toString()
+
+                if (userViewModel.getUsername().toString() == "") {
+                    // cut the email name before @
+                    val email = userViewModel.getEmail().toString()
+                    val index = email.indexOf("@")
+                    val name = email.substring(0, index)
+                    tvProfileName.text = name
+                } else {
+                    tvProfileName.text = userViewModel.getUsername().toString()
+                }
             } else {
                 tvEmail.text = "Not logged in"
                 tvProfileName.text = "Not logged in"
             }
+
+
 
             btnLogout.setOnClickListener {
                 userViewModel.signOut()

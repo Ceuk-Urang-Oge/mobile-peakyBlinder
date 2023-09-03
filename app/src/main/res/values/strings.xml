@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Simental</string>
+    <string name="app_name">Peaky Blinder</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_profile">Profile</string>
     <string name="hello">Hello,</string>
-    <string name="sign_in_to_continue">Masuk dengan google untuk melanjutkan</string>
+    <string name="sign_in_to_continue">Please fill your information below.</string>
     <string name="logout">Keluar</string>
     <string name="name">Nama</string>
     <string name="account_name">Nama Akun</string>
@@ -14,8 +14,8 @@
     <string name="cek_kesehatan_mental">Cek Kesehatan Mental</string>
     <string name="artikel_amp_tips"><![CDATA[Artikel & Tips]]></string>
     <string name="konsultasi_ahli">Konsultasi Ahli</string>
-    <string name="not_registered">Belum punya akun google?</string>
-    <string name="register_here">Daftar disini</string>
+    <string name="not_registered">Not registered?</string>
+    <string name="register_here">Sign Up Here</string>
     <string name="mental_test">Mental Test</string>
     <string name="mental_test_instruction">Instruksi: Mohon jawab pertanyaan di bawah ini sesuai dengan kondisi Anda saat ini. Berikan jawaban yang paling sesuai dengan perasaan dan perilaku Anda dalam satu bulan terakhir.</string>
     <string name="pertanyaan_1">1. Saya merasa sedih atau kehilangan minat dalam aktivitas yang biasanya saya nikmati.</string>
@@ -49,6 +49,20 @@
     <string name="judul_artikel">Judul Artikel</string>
     <string name="penulis">Penulis</string>
     <string name="isi_artikel">Isi Artikel</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="input_your_email">Input Your Email</string>
+    <string name="input_your_password">Input your password</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_have_an_account">already have an account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_here">Login Here</string>
+    <string name="what_can_i_do_for_you">What can i do for you?</string>
+    <string name="retinopathy_check">Retinopathy Check</string>
+    <string name="history">History</string>
+    <string name="recomended_article">Recomended Article</string>
+    <string name="judul">Judul</string>
+    <string name="content">Content</string>
 
 
 </resources>

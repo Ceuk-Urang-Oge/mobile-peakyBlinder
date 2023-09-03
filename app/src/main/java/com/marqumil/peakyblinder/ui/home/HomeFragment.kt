@@ -3,6 +3,7 @@ package com.marqumil.peakyblinder.ui.home
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -45,17 +46,7 @@ class HomeFragment : Fragment() {
 
         // hide action bar
         requireActivity().actionBar?.hide()
-        binding.mainHomeLayout.fullScroll(View.FOCUS_UP)
 
-        // image slider
-        val images = listOf(R.drawable.img_slide_1, R.drawable.img_slide_2, R.drawable.img_slide_1)
-        val viewPager = binding.viewPager
-        val adapter = ImageAdapter(requireContext(), images)
-        viewPager.adapter = adapter
-        adapter.setViewPager(viewPager)
-        indicator = binding.indicator
-        indicator.setViewPager(viewPager)
-        adapter.setViewPager(viewPager)
 
 //        val textView: TextView = binding.textHome
 //        homeViewModel.text.observe(viewLifecycleOwner) {
@@ -63,29 +54,30 @@ class HomeFragment : Fragment() {
 //        }
 
         binding.apply {
-            if (userViewModel.isUserSignedIn()) {
-                tvName.text = userViewModel.getUsername().toString()
+            // check if user username is null
+            Log.d("username", userViewModel.getUsername().toString())
+            if (userViewModel.getUsername().toString() == "") {
+                // cut the email name before @
+                val email = userViewModel.getEmail().toString()
+                val index = email.indexOf("@")
+                val name = email.substring(0, index)
+                tvName.text = name
             } else {
-                tvName.text = "Not logged in"
+                tvName.text = userViewModel.getUsername().toString()
             }
 
             // cek kesehatan mental
-            cdBgKesehatanMental.setOnClickListener {
+            btnRetinopathyCheck.setOnClickListener {
                 val intent = Intent(requireContext(), MentalTestActivity::class.java)
                 startActivity(intent)
             }
 
             // artikel
-            cdBgArtikel.setOnClickListener {
+            btnHistory.setOnClickListener {
                 val intent = Intent(requireContext(), ArtikelActivity::class.java)
                 startActivity(intent)
             }
 
-            // doctor
-            cdBgConsultation.setOnClickListener {
-                val intent = Intent(requireContext(), ConsultationActivity::class.java)
-                startActivity(intent)
-            }
         }
 
         return root

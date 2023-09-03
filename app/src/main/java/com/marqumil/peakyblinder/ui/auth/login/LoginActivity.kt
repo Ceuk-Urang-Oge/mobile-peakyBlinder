@@ -18,6 +18,7 @@ import com.google.firebase.ktx.Firebase
 import com.marqumil.peakyblinder.MainActivity
 import com.marqumil.peakyblinder.R
 import com.marqumil.peakyblinder.databinding.ActivityLoginBinding
+import com.marqumil.peakyblinder.ui.auth.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -50,10 +51,8 @@ class LoginActivity : AppCompatActivity() {
 
         binding.tvRegister.setOnClickListener {
             // intent to google web register
-            Intent(Intent.ACTION_VIEW).apply {
-                data = android.net.Uri.parse("https://accounts.google.com/signup/v2/webcreateaccount?hl=id&flowName=GlifWebSignIn&flowEntry=SignUp")
-                startActivity(this)
-            }
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
         }
 
     }
