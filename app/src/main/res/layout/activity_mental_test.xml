@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mentaltest.MentalTestActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_mental_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="@string/mental_test"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/toolbar_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_arrow_back_ios_new_24"
+                android:layout_gravity="start" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tvInstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/mental_test_instruction"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_mental_test" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="411dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/buttonBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvInstruction" />
+
+        <TextView
+            android:id="@+id/tvPertanyaan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/pertanyaan_1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvInstruction" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan1">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan1SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan1Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan1KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan1Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan1" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan2">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan2SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan2Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan2KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan2Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_3"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan2" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan3">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan3SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan3Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan3KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan3Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_4"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan3" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan4">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan4SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan4Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan4KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan4Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_5"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan4" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan5">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan5SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan5Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan5KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan5Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_6"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan5" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan6">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan6SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan6Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan6KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan6Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_7"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan6" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan7">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan7SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan7Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan7KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan7Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_8"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan7" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan8">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan8SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan8Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan8KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan8Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_9"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan8" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan9">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan9SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan9Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan9KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan9Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_10"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan9" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan10">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan10SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan10Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan10KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan10Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_11"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan10" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan11">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan11SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan11Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan11KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan11Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_12"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan11" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan12">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan12SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan12Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan12KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan12Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_13"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan12" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan13">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan13SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan13Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan13KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan13Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_14"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan13" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan14">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan14SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan14Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan14KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan14Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_15"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan14" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPertanyaan15">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan15SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan15Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan15KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan15Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_16"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgPertanyaan15" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPertanyaan16">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan16SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan16Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan16KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan16Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_17"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgPertanyaan16" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPertanyaan17">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan17SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan17Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan17KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan17Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_18"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgPertanyaan17" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPertanyaan18">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan18SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan18Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan18KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan18Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPertanyaan19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pertanyaan_19"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgPertanyaan18" />
+
+        <RadioGroup
+            android:id="@+id/rgPertanyaan19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPertanyaan19">
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan19SangatJarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sangat_jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan19Jarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jarang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan19KadangKadang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kadang_kadang" />
+
+            <RadioButton
+                android:id="@+id/rbPertanyaan19Sering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sering" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg_button"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgPertanyaan19" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello,</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="logout">Logout</string>
+    <string name="name">Name</string>
+    <string name="account_name">Account Name</string>
+    <string name="email">Email</string>
+    <string name="email_address">Email Address</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="cek_kesehatan_mental">Cek Kesehatan Mental</string>
+    <string name="artikel_amp_tips"><![CDATA[Artikel & Tips]]></string>
+    <string name="konsultasi_ahli">Konsultasi Ahli</string>
+    <string name="not_registered">Belum punya akun google?</string>
+    <string name="register_here">Daftar disini</string>
+    <string name="mental_test">Mental Test</string>
+    <string name="mental_test_instruction">Instruksi: Mohon jawab pertanyaan di bawah ini sesuai dengan kondisi Anda saat ini. Berikan jawaban yang paling sesuai dengan perasaan dan perilaku Anda dalam 1 bulan terakhir.</string>
+    <string name="pertanyaan_1">1. Saya merasa sedih atau kehilangan minat dalam aktivitas yang biasanya saya nikmati.</string>
+    <string name="sangat_jarang">Sangat Jarang</string>
+    <string name="jarang">Jarang</string>
+    <string name="kadang_kadang">Kadang-kadang</string>
+    <string name="sering">Sering</string>
+    <string name="pertanyaan_2">Saya mengalami perubahan berat badan yang signifikan dalam beberapa bulan terakhir.</string>
+    <string name="submit">Submit</string>
+    <string name="coma">,</string>
+    <string name="sex">Pria</string>
+    <string name="age">18</string>
+    <string name="judul_artikel">Judul Artikel</string>
+    <string name="penulis">Penulis</string>
+    <string name="isi_artikel">Isi Artikel</string>
+</resources>

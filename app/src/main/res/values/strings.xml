@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Simental</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+    <string name="hello">Hello,</string>
+    <string name="sign_in_to_continue">Masuk dengan google untuk melanjutkan</string>
+    <string name="logout">Keluar</string>
+    <string name="name">Nama</string>
+    <string name="account_name">Nama Akun</string>
+    <string name="email">Email</string>
+    <string name="email_address">Alamat Email</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="cek_kesehatan_mental">Cek Kesehatan Mental</string>
+    <string name="artikel_amp_tips"><![CDATA[Artikel & Tips]]></string>
+    <string name="konsultasi_ahli">Konsultasi Ahli</string>
+    <string name="not_registered">Belum punya akun google?</string>
+    <string name="register_here">Daftar disini</string>
+    <string name="mental_test">Mental Test</string>
+    <string name="mental_test_instruction">Instruksi: Mohon jawab pertanyaan di bawah ini sesuai dengan kondisi Anda saat ini. Berikan jawaban yang paling sesuai dengan perasaan dan perilaku Anda dalam satu bulan terakhir.</string>
+    <string name="pertanyaan_1">1. Saya merasa sedih atau kehilangan minat dalam aktivitas yang biasanya saya nikmati.</string>
+    <string name="sangat_jarang">Sangat Jarang</string>
+    <string name="jarang">Jarang</string>
+    <string name="kadang_kadang">Kadang</string>
+    <string name="sering">Sering</string>
+    <string name="pertanyaan_2">2. Saya mengalami perubahan berat badan yang signifikan dalam beberapa bulan terakhir.</string>
+    <string name="pertanyaan_3">3. Saya mengalami kesulitan tidur atau tidur terlalu banyak.</string>
+    <string name="pertanyaan_4">4. Saya merasa lelah atau kekurangan energi.</string>
+    <string name="pertanyaan_5">5. Saya merasa bersalah atau tidak berharga.</string>
+    <string name="pertanyaan_6">6. Saya mengalami kesulitan berkonsentrasi, misalnya kesulitan membaca koran atau menonton televisi.</string>
+    <string name="pertanyaan_7">7. Saya sering merasa gelisah atau cemas tanpa alasan yang jelas.</string>
+    <string name="pertanyaan_8">8. Saya merasa cemas atau tegang dalam situasi tertentu (misalnya, sosial, pekerjaan, atau pribadi).</string>
+    <string name="pertanyaan_9">9. Saya mengalami serangan panik (misalnya, detak jantung cepat, keringat, gemetar, atau perasaan tidak nyaman di perut).</string>
+    <string name="pertanyaan_10">10. Saya merasa khawatir berlebihan tentang masa depan atau hal-hal yang mungkin terjadi.</string>
+    <string name="pertanyaan_11">11. Saya merasa kesulitan untuk menjalin hubungan sosial atau merasa terasing dari orang lain.</string>
+    <string name="pertanyaan_12">12. Saya cenderung menghindari pertemuan sosial atau aktivitas kelompok.</string>
+    <string name="pertanyaan_13">13. Saya merasa tidak dihargai atau dicintai oleh orang lain.</string>
+    <string name="pertanyaan_14">14. Saya sering merasa marah atau mudah tersinggung.</string>
+    <string name="pertanyaan_15">15. Saya mengalami perubahan suasana hati yang drastis (misalnya, dari sangat bahagia menjadi sangat sedih).</string>
+    <string name="pertanyaan_16">16. Saya menggunakan alkohol atau obat-obatan sebagai cara mengatasi masalah atau emosi negatif.</string>
+    <string name="pertanyaan_17">17. Saya memiliki pola makan yang tidak sehat atau makan berlebihan ketika stres.</string>
+    <string name="pertanyaan_18">18. Saya merasa tidak berdaya atau putus asa dalam menghadapi masalah atau situasi sulit.</string>
+    <string name="pertanyaan_19">19. Saya mengalami pikiran untuk melukai diri sendiri atau bunuh diri.</string>
+    <string name="submit">Submit</string>
+    <string name="coma">,</string>
+    <string name="years">Tahun</string>
+    <string name="sex">Pria</string>
+    <string name="age">18</string>
+    <string name="judul_artikel">Judul Artikel</string>
+    <string name="penulis">Penulis</string>
+    <string name="isi_artikel">Isi Artikel</string>
+
+
+</resources>
