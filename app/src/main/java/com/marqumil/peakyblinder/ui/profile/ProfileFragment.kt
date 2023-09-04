@@ -40,7 +40,7 @@ class ProfileFragment : Fragment() {
             if (userViewModel.isUserSignedIn()) {
                 tvEmail.text = userViewModel.getEmail().toString()
 
-                if (userViewModel.getUsername().toString() == "") {
+                if (userViewModel.getUsername().toString() == "" || userViewModel.getUsername().toString() == "null" || userViewModel.getUsername().toString() == " " || userViewModel.getUsername().toString() == null) {
                     // cut the email name before @
                     val email = userViewModel.getEmail().toString()
                     val index = email.indexOf("@")

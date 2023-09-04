@@ -12,8 +12,21 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/navigation_article"
+        android:name="com.marqumil.peakyblinder.ui.article.ArticleFragment"
+        android:label="@string/article"
+        tools:layout="@layout/fragment_article" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.marqumil.peakyblinder.ui.history.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
         android:id="@+id/navigation_profile"
         android:name="com.marqumil.peakyblinder.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
+
 </navigation>

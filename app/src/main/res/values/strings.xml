@@ -63,6 +63,10 @@
     <string name="recomended_article">Recomended Article</string>
     <string name="judul">Judul</string>
     <string name="content">Content</string>
+    <string name="article">Article</string>
 
-
+    <string name="permission_required">Camera access is required to display the camera preview.</string>
+    <string name="ok">OK</string>
+    <string name="permission_granted">Permission is granted. You can use the camera now.</string>
+    <string name="scan">Scan</string>
 </resources>

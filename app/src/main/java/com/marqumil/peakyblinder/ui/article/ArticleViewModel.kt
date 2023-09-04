@@ -1,0 +1,61 @@
+package com.marqumil.peakyblinder.ui.article
+
+import androidx.lifecycle.ViewModel
+import com.marqumil.peakyblinder.remote.response.ArtikelData
+
+class ArticleViewModel : ViewModel() {
+
+
+    fun getArticle(): ArrayList<ArtikelData> {
+        // array of Artikel Data
+        val article = ArrayList<ArtikelData>()
+
+        // adding Artikel Data to ArrayList
+        val article1 = ArtikelData(
+            "Panduan Makan Sehat untuk Pengidap Diabetes",
+            "10 Januari 2023",
+            "Dr. Maria Susanti, Sp.PD",
+            "Panduan makan sehat bagi penderita diabetes sangat penting untuk menjaga gula darah tetap stabil. Beberapa tips termasuk membatasi konsumsi karbohidrat sederhana, meningkatkan serat dalam makanan, dan memilih makanan rendah gula. Selain itu, penting untuk menghindari makanan cepat saji dan minuman beralkohol."
+        )
+
+        val article2 = ArtikelData(
+            "Pentingnya Olahraga dalam Pengelolaan Diabetes",
+            "22 Februari 2023",
+            "Fitriani Suryanto, PT",
+            "Olahraga adalah bagian penting dari manajemen diabetes. Dalam artikel ini, kami membahas jenis-jenis olahraga yang cocok bagi penderita diabetes, seperti berjalan kaki, bersepeda, dan renang. Olahraga secara teratur dapat membantu meningkatkan sensitivitas insulin dan mengontrol kadar gula darah."
+        )
+
+        val article3 = ArtikelData(
+            "Tips Menyusun Menu Makanan Rendah Karbohidrat untuk Diabetes",
+            "14 Mei 2023",
+            "Chef Ahmad Abdullah",
+            "Menyusun menu makanan rendah karbohidrat dapat membantu mengendalikan diabetes. Artikel ini berisi resep-resep lezat dan ide-ide makanan yang rendah karbohidrat namun kaya nutrisi. Dengan mengikuti panduan ini, Anda dapat menjaga gula darah tetap stabil."
+        )
+
+        val article4 = ArtikelData(
+            "Teknologi Terkini dalam Pengukuran Gula Darah",
+            "10 Maret 2023",
+            "Dr. Budi Rahardjo, Sp.PD, M.Kes",
+            "Teknologi terbaru dalam pengukuran gula darah, seperti sensor kontinu dan aplikasi pemantauan, telah membuat manajemen diabetes lebih mudah. Dalam artikel ini, kami menjelaskan cara teknologi ini bekerja dan bagaimana pengidap diabetes dapat menggunakannya untuk memantau kondisi mereka."
+        )
+
+        val article5 = ArtikelData(
+            "Menjaga Kesehatan Mata Saat Diabetes",
+            "17 Juni 2020",
+            "Dr. Lina Wijaya, Sp.M",
+            "Diabetes dapat menyebabkan masalah kesehatan mata, seperti retinopati diabetik. Dalam artikel ini, kami membahas pentingnya pemeriksaan mata rutin dan memberikan tips untuk menjaga kesehatan mata saat diabetes."
+        )
+
+        val article6 = ArtikelData(
+            "Manajemen Stres untuk Pengidap Diabetes",
+            "12/12/2020",
+            "Psikolog Nia Ramadhani, M.Psi",
+            "Stres dapat memengaruhi kadar gula darah. Dalam artikel ini, psikolog memberikan tips tentang cara mengelola stres dan menghindari dampak negatifnya pada diabetes."
+        )
+
+        // adding Artikel Data to ArrayList
+        article.addAll(listOf(article1, article2, article3, article4, article5, article6))
+
+        return article
+    }
+}
