@@ -71,4 +71,6 @@
     <string name="scan">Scan</string>
     <string name="you_should_check_with_a_doctor">You have to check with the experts</string>
     <string name="scan_to_get_result">Scan to get result</string>
+    <string name="last_7_days">Last 7 Days</string>
+    <string name="last_1_month">Last Month</string>
 </resources>
