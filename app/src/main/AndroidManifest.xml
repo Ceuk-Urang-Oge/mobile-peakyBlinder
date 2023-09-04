@@ -32,20 +32,13 @@
             android:name=".ui.auth.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.news.DetailArtikelActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.news.ArtikelActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.doctor.ConsultationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.mentaltest.MentalTestActivity"
             android:exported="false" />
         <activity
             android:name=".ui.auth.login.LoginActivity"
             android:exported="false" />
+        <activity android:name=".ui.article.DetailArticleActivity"
+            android:exported="false"/>
         <activity
             android:name=".ui.splash.SplashScreen"
             android:exported="true">

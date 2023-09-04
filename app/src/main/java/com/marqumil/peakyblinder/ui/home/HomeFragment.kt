@@ -18,7 +18,6 @@ import com.marqumil.peakyblinder.R
 import com.marqumil.peakyblinder.databinding.FragmentHomeBinding
 import com.marqumil.peakyblinder.ui.article.ArticleFragment
 import com.marqumil.peakyblinder.ui.auth.UserViewModel
-import com.marqumil.peakyblinder.ui.doctor.ConsultationActivity
 import com.marqumil.peakyblinder.ui.history.HistoryFragment
 import com.marqumil.peakyblinder.ui.news.ArtikelActivity
 import com.marqumil.peakyblinder.ui.profile.ProfileFragment
