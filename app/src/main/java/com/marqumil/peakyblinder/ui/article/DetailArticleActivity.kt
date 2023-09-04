@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import com.bumptech.glide.Glide
 import com.marqumil.peakyblinder.databinding.ActivityDetailArtikelBinding
-import com.marqumil.peakyblinder.remote.response.ArticlesItem
 import com.marqumil.peakyblinder.remote.response.ArtikelData
 
 class DetailArticleActivity : AppCompatActivity() {

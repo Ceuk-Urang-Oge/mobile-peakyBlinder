@@ -17,9 +17,9 @@ import androidx.viewpager.widget.ViewPager
 import com.marqumil.peakyblinder.R
 import com.marqumil.peakyblinder.databinding.FragmentHomeBinding
 import com.marqumil.peakyblinder.ui.article.ArticleFragment
+import com.marqumil.peakyblinder.ui.article.ArticleViewModel
 import com.marqumil.peakyblinder.ui.auth.UserViewModel
 import com.marqumil.peakyblinder.ui.history.HistoryFragment
-import com.marqumil.peakyblinder.ui.news.ArtikelActivity
 import com.marqumil.peakyblinder.ui.profile.ProfileFragment
 import com.marqumil.peakyblinder.ui.retinopathy.RetinopathyActivity
 import me.relex.circleindicator.CircleIndicator
@@ -28,6 +28,7 @@ class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     lateinit var indicator: CircleIndicator
+    private lateinit var articleViewModel: ArticleViewModel
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -95,6 +96,14 @@ class HomeFragment : Fragment() {
 
             }
 
+        }
+
+        articleViewModel = ViewModelProvider(this).get(ArticleViewModel::class.java)
+        val array = articleViewModel.getArticle()
+        binding.apply {
+            imgPoster.setImageResource(array[0].img)
+            tvItemTitle.text = array[0].judul
+            tvItemPublishedDate.text = array[0].tanggalTerbit
         }
 
         return root

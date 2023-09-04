@@ -40,6 +40,7 @@ class RetinopathyActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
+        binding.warn.visibility = android.view.View.GONE
 
         binding.btnGallery.setOnClickListener {
             ImagePicker.with(this)
@@ -63,30 +64,14 @@ class RetinopathyActivity : AppCompatActivity() {
             val bitmap = uriToBitmap(uri, contentResolver)
             val resizedBitmap = Bitmap.createScaledBitmap(bitmap as Bitmap, IMAGE_SIZE, IMAGE_SIZE, true)
             classifyImage(resizedBitmap)
+            binding.warn.visibility = android.view.View.VISIBLE
 
         } else if (resultCode == ImagePicker.RESULT_ERROR) {
+            binding.warn.visibility = android.view.View.VISIBLE
             Toast.makeText(this, ImagePicker.getError(data), Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(this, "Task Cancelled", Toast.LENGTH_SHORT).show()
         }
-
-
-//        Log.d("RetinoImage", extras.toString() + " " + requestCode + " " + resultCode + " " + data.toString())
-//        if (requestCode == IMAGE_CHOOSE && resultCode == RESULT_OK && data != null) {
-//            val imageBitmap = extras?.get("data")
-//            binding.imageView.setImageBitmap(imageBitmap as Bitmap)
-//            Log.d("RetinoImages", imageBitmap.toString())
-//            // resize image bitmap to 32x32
-//            val resizedBitmap = Bitmap.createScaledBitmap(imageBitmap, IMAGE_SIZE, IMAGE_SIZE, true)
-//            classifyImage(resizedBitmap)
-//        } else if (requestCode == REQUEST_CODE && resultCode == RESULT_OK && data != null) {
-//            val imageBitmap = extras?.get("data")
-//            binding.imageView.setImageBitmap(imageBitmap as Bitmap)
-//            Log.d("RetinoImages", imageBitmap.toString())
-//            // resize image bitmap to 32x32
-//            val resizedBitmap = Bitmap.createScaledBitmap(imageBitmap, IMAGE_SIZE, IMAGE_SIZE, true)
-//            classifyImage(resizedBitmap)
-//        }
     }
 
     private fun classifyImage(bitmap: Bitmap){
@@ -140,7 +125,7 @@ class RetinopathyActivity : AppCompatActivity() {
 
 
         // save the result to textview
-        binding.result.text = outputFeature0.floatArray[0].toString()
+        //binding.result.text = outputFeature0.floatArray[0].toString()
         Log.d("output", outputFeature0.floatArray[0].toString())
 
 

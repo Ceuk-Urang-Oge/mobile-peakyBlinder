@@ -69,4 +69,6 @@
     <string name="ok">OK</string>
     <string name="permission_granted">Permission is granted. You can use the camera now.</string>
     <string name="scan">Scan</string>
+    <string name="you_should_check_with_a_doctor">You have to check with the experts</string>
+    <string name="scan_to_get_result">Scan to get result</string>
 </resources>
